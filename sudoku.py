@@ -23,16 +23,22 @@ while c > 0:
         pass
     else:
         i = input('Please enter a number between 0 to {} for i: '.format(n-1))
+        i = int(i)
+
     if j >= 0 and j <= n-1:
         pass
     else:
-        j = input('Please enter a number between 0 to {} for j: '.format(n-1))           
+        j = input('Please enter a number between 0 to {} for j: '.format(n-1)) 
+        j = int(j)
+        
     if value >= 1 and value <= n:
         pass
     else:
         value = input('Please enter a number between 1 to {} for value: '.format(n))
+        value = int(value)
+
     arry[i, j] = value
-    print(arry)     
+    
     c = c - 1
 
     

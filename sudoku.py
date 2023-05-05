@@ -1,6 +1,11 @@
+import numpy as np
+
 # Get n from user, n*n is the size of our matrix
 n = input('n : ')
 n = int(n)
+
+# Make a n*n arry with zeros
+arry = np.zeros((n, n), dtype = int)
 
 # Get c from user, c is the number of value that are in matrix
 c = input('c : ')
@@ -26,7 +31,8 @@ while c > 0:
         pass
     else:
         value = input('Please enter a number between 1 to {} for value: '.format(n))
-          
+    arry[i, j] = value
+    print(arry)     
     c = c - 1
 
     

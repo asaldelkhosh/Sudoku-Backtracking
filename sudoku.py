@@ -9,9 +9,19 @@ c = int(c)
 # Get values and the positions and changing them in arry
 while c > 0:
     i = input('i : ')
-    i = int(i)
-    j = input('j : ')
-    j = int(j)
-    value = input('value : ')   
-    value = int(value)
+    if i >= 0 and i <= n-1:
+        i = int(i)
+        j = input('j : ')
+    else:
+        print('Please enter a number between 0 to {}'.formt(n-1))    
+    if j >= 0 and j <= n-1:
+        j = int(j)
+        value = input('value : ')
+    else:
+        print('Please enter a number between 0 to {}'.formt(n-1))
+    if value >= 1 and value <= n:        
+        value = int(value)
+    else:
+        print('Please enter a number between 1 to {}'.formt(n))    
+
     c = c - 1

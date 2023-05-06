@@ -1,6 +1,5 @@
 import numpy as np
 
-
 # Get n from user, n*n is the size of our matrix
 n = input('n : ')
 n = int(n)
@@ -26,5 +25,5 @@ while c > 0:
     
     c = c - 1
 
- 
+   
  

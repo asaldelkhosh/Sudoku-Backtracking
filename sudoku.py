@@ -1,4 +1,5 @@
 import numpy as np
+from backtraking import solve
 
 # Get n from user, n*n is the size of our matrix
 n = input('n : ')
@@ -25,5 +26,9 @@ while c > 0:
     
     c = c - 1
 
-   
+# Calling solve function from backtraking,py
+if solve(arry, n=n) == True:
+    print(*arry,sep='\n')
+else: 
+    print('Unsolvable CSP!')
  
